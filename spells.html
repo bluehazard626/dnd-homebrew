@@ -1,0 +1,10 @@
+---
+layout: default
+title: Spells
+---
+<ul>
+  {% for spell in site.spells %}
+    <h2>{{ spell.name }}</h2>
+    <p>{{ spell.content | markdownify }}</p>
+  {% endfor %}
+</ul>
