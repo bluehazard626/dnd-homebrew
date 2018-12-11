@@ -1,7 +1,7 @@
 - name: Home
   link: /
 - name: Enchantments
-  link: /enchantments.html
+  link: /enchantments/all.html
 - name: Feats
   link: /feats.html
 - name: Items

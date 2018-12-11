@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<h1>
+  Enchantments
+</h1>
+
+{% for item in site.data.enchantments.types %}
+  <a href="{{ item.link }}">
+    {{ item.name }}
+  </a>
+{% endfor %}
+
+<h2>
+  {{ page.title }}
+</h2>
+
+{{ content }}
+
+<ul>
+  {% for enchantment in site.enchantments %}
+    {% if enchantment.type == page.type or page.type == 'all' %}
+      <h2>{{ enchantment.name }}</h2>
+      <h3>{{ enchantment.type | uppercase }} Enchantment</h3>
+      <ul>
+        <li><b>Cost:</b> {{ enchantment.cost | capitalize }} Gold</li>
+        <li>
+          <b>Applicable {{ enchantment.type | downcase }} type(s):</b>
+          <ul>
+            {% for type in enchantment.applicable %}
+              <li>{{ type | capitalize }}</li>
+            {% endfor %}
+          </ul>
+        </li>
+        <li><b>Description</b>: {{ enchantment.content | markdownify }}</li>
+      </ul>
+    {% endif %}
+  {% endfor %}
+</ul>

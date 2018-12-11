@@ -1,0 +1,10 @@
+types:
+  - All:
+    link: all.html
+    name: All
+  - Armor:
+    link: armor.html
+    name: Armor
+  - Weapons:
+    link: weapons.html
+    name: Weapons
