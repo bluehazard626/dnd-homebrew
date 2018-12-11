@@ -1,7 +1,7 @@
 title: D&D Homebrew
 description: A collection of homebrew content to supplement gameplay of D&D 5e
-baseurl: "/dnd-homebrew"
-url: "https://mcallaster.github.io/"
+baseurl: ""
+url: "https://dnd-homebrew.com/"
 
 collections:
   enchantments:
