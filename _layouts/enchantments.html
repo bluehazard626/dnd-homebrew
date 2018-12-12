@@ -1,39 +1,40 @@
 ---
 layout: default
 ---
-<h1>
-  Enchantments
-</h1>
+<div class="flex justify-center">
+  <div class="b f3 f2-ns pa2 pa3-ns">Enchantments</div>
+</div>
+<div class="flex justify-center flex-wrap f7 f5-ns mb3 mb4-ns">
+  {% for item in site.data.enchantments.types %}
+    <a
+      href="{{ item.link }}"
+      class="b pa2 br3 no-underline black grow {% unless page.url != '/enchantments/' and item.name == 'all' %}{% if page.url contains item.link %}near-white bg-blue pe-none{% endif %}{% endunless %}"
+    >
+      {{ item.name | capitalize }}
+    </a>
+  {% endfor %}
+</div>
 
-{% for item in site.data.enchantments.types %}
-  <a href="{{ item.link }}">
-    {{ item.name }}
-  </a>
-{% endfor %}
-
-<h2>
-  {{ page.title }}
-</h2>
-
-{{ content }}
-
-<ul>
-  {% for enchantment in site.enchantments %}
-    {% if enchantment.type == page.type or page.type == 'all' %}
-      <h2>{{ enchantment.name }}</h2>
-      <h3>{{ enchantment.type | uppercase }} Enchantment</h3>
-      <ul>
-        <li><b>Cost:</b> {{ enchantment.cost | capitalize }} Gold</li>
-        <li>
-          <b>Applicable {{ enchantment.type | downcase }} type(s):</b>
-          <ul>
-            {% for type in enchantment.applicable %}
-              <li>{{ type | capitalize }}</li>
-            {% endfor %}
-          </ul>
-        </li>
-        <li><b>Description</b>: {{ enchantment.content | markdownify }}</li>
-      </ul>
+<div>
+  {% for item in site.content %}
+    {% if item.type == page.type or page.type == 'all' and item.section == 'enchantments' %}
+      <div class="pa2 pa4-ns mv2 mv4-ns br2 br3-ns shadow-4 shadow-3-ns bg-light-gray">
+        <div class="mb2 mb3-ns f3 f2-ns bb bw1 flex items-center justify-between">
+          <div class="b">{{ item.name }}</div>
+          <div class="f6 f5-ns i dark-gray">{{ item.type | capitalize }} Enchantment</div>
+        </div>
+        <div class="mb2 mb3-ns"><b>Cost:</b> {{ item.cost | capitalize }} Gold</div>
+        <div class="mb2 mb3-ns">
+          <div class="mb1 mb2-ns b">Applicable {{ item.type | downcase }} type(s):</div>
+          {% for type in item.applicable %}
+            <div>- {{ type | capitalize }}</div>
+          {% endfor %}
+        </div>
+        <div>
+          <div class="b mb1 mb2-ns">Description:</div>
+          <div class="br4 i bg-near-white ph2 ph3-ns pv1 serif">{{ item.content | markdownify }}</div>
+        </div>
+      </div>
     {% endif %}
   {% endfor %}
-</ul>
+</div>

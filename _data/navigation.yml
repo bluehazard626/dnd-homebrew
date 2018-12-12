@@ -1,10 +1,10 @@
 - name: Home
   link: /
 - name: Enchantments
-  link: /enchantments/all.html
+  link: /enchantments
 - name: Feats
-  link: /feats.html
+  link: /feats
 - name: Items
-  link: /items.html
+  link: /items
 - name: Spells
-  link: /spells.html
+  link: /spells

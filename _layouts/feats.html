@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div class="flex justify-center">
+  <div class="b f3 f2-ns pa2 pa3-ns">Feats</div>
+</div>
+
+<div>
+  {% for item in site.content %}
+    {% if item.section == 'feats' %}
+      <div class="pa2 pa4-ns mv2 mv4-ns br2 br3-ns shadow-4 shadow-3-ns bg-light-gray">
+        <div class="mb2 mb3-ns f3 f2-ns bb bw1 flex items-center justify-between">
+          <div class="b">{{ item.name }}</div>
+          <div class="f6 f5-ns i dark-gray">Feat</div>
+        </div>
+        <div class=" mb3 mb3-ns f6 f5-ns i dark-gray">Prerequisite: {{item.prerequisite}}</div>
+        <div>
+          <div class="b mb1 mb2-ns">Description:</div>
+          <div class="br4 i bg-near-white ph2 ph3-ns pv1 serif">{{ item.content | markdownify }}</div>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

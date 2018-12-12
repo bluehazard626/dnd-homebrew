@@ -1,10 +1,10 @@
 types:
   - All:
-    link: all.html
-    name: All
-  - Armor:
-    link: armor.html
-    name: Armor
-  - Weapons:
-    link: weapons.html
-    name: Weapons
+    link: /enchantments/
+    name: all
+  - armor:
+    link: /enchantments/armor
+    name: armor
+  - weapons:
+    link: /enchantments/weapons
+    name: weapons

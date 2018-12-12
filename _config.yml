@@ -4,11 +4,5 @@ baseurl: ""
 url: "https://dnd-homebrew.com/"
 
 collections:
-  enchantments:
-    layout: enchantment
-  feats:
-    layout: feat
-  items:
-    layout: item
-  spells:
-    layout: spell
+  content:
+    permalink: /:path
