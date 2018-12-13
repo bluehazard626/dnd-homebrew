@@ -1,0 +1,42 @@
+---
+layout: default
+---
+Item Types:&nbsp;
+<p>
+  {% for item in site.data.magic_items.navigation %}
+    <a href="{{ item.link }}">
+      {{ item.name | capitalize }}
+    </a>
+    {% unless item == site.data.magic_items.navigation.last %}&nbsp;-&nbsp;{% endunless %}
+  {% endfor %}
+</p>
+
+<h1>
+  {% if page.type == 'all' %}All{% endif %}
+  Magic
+  {% if page.type == 'all' %}
+    Items
+  {% else %}
+    {{ page.type | capitalize }}
+  {% endif %}
+</h1>
+
+<hr>
+
+{% for item in site.data.magic_items.content %}
+  <h2>{{ item.name | capitalize }} - Magic {{ item.type | capitalize }}</h1>
+  <p>
+    <b>Cost:</b>&nbsp;
+    {{ item.cost | capitalize }} gold
+  </p>
+  {% for quality in item.specifics %}
+    <p>
+      <b>{{ quality[0] | capitalize }}:</b> {{ quality[1] }}
+    </p>
+  {% endfor %}
+  <p>
+    <b>Description:</b>
+    {{ item.description | markdownify }}
+  </p>
+  {% unless item == site.data.magic_items.content.last %}<hr>{% endunless %}
+{% endfor %}

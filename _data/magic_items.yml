@@ -1,0 +1,18 @@
+navigation:
+  - name: all
+    link: /magic_items
+  - name: armor
+    link: /magic_items/armor
+  - name: items
+    link: /magic_items/items
+  - name: weapons
+    link: /magic_items/weapons
+
+content:
+  - name: dubious racket
+    type: item
+    cost: 2000g
+    specifics:
+      action: Some action
+    description: |
+      some description

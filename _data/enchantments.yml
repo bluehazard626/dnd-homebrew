@@ -1,10 +1,15 @@
-types:
-  - All:
-    link: /enchantments/
-    name: all
-  - armor:
+navigation:
+  - name: all
+    link: /enchantments
+  - name: armor
     link: /enchantments/armor
-    name: armor
-  - weapons:
+  - name: weapons
     link: /enchantments/weapons
-    name: weapons
+
+content:
+  - name: something
+    type: weapon
+    applicable:
+      - martial weapons
+    cost: 200g
+    description: |

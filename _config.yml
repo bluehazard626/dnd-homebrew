@@ -1,7 +1,8 @@
 title: D&D Homebrew
-description: A collection of homebrew content to supplement gameplay of D&D 5e
+description: Supplementary content for D&D 5e
 baseurl: ""
 url: "https://dnd-homebrew.com/"
+theme: jekyll-theme-modernist
 
 collections:
   content:

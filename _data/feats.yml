@@ -1,0 +1,9 @@
+content:
+  - name: something
+    prerequisite: >
+      Have at least one level of Cleric
+    description: |
+      When you cast a spell that restores Hit Points, before rolling the die you can roll a
+      percentage die for each die that you would roll. If the result is greater than or equal
+      to 50 you heal the maximum amount for that die. If the result is less than 50 roll 
+      the die as normal. You must finish a long rest before using Blessed Heal again.

@@ -1,30 +1,37 @@
 <!doctype html>
-<html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/tachyons.min.css">
-    <link rel="stylesheet" href="/assets/main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body class="f5 f4-ns flex flex-column vh-100 black bg-near-white sans-serif">
-    <div class="i flex justify-center pa2 pa3-ns f5 f2-ns bg-moon-gray">
-      D&D Homebrew
-    </div>
-    <div class="flex justify-center bg-moon-gray flex-wrap bb bw1 f7 f5-ns">
-        {% for item in site.data.navigation %}
-          <a
-            href="{{ item.link }}"
-            class="b no-underline pa1 pa2-ns ma1 ma2-ns black grow {% unless page.url != '/' and item.link == '/' %}{% if page.url contains item.link %}bb bw2 b--blue pe-none{% endif %}{% endunless %}"
-          >
-            {{ item.name }}
-          </a>
-        {% endfor %}
-    </div>
-
-    <div class="flex justify-center overflow-auto h-100">
-      <div class="w-90 w-80-m w-70-l mw7">
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        {% if site.description or site.github.project_tagline %}
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% endif %}
+        <br>
+        <nav>
+          {% for item in site.data.navigation %}
+            <a href="{{ item.link }}">
+              {{ item.name }}
+            </a>
+            {% unless item == site.data.navigation.last %}&nbsp;-&nbsp;{% endunless %}
+          {% endfor %}
+        </nav>
+      </header>
+      <section>
         {{ content }}
-      </div>
+      </section>
     </div>
+    <footer>
+      {% if site.github.is_project_page %}
+        <p>Project maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+      {% endif %}
+    </footer>
   </body>
 </html>
