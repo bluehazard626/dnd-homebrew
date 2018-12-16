@@ -1,5 +1,6 @@
 ---
+title: Armor Enchantments
 layout: enchantments
-type: armor
+filter: armor
 permalink: /enchantments/armor/
 ---

@@ -1,5 +1,6 @@
 ---
+title: Weapon Enchantments
 layout: enchantments
-type: weapon
+filter: weapon
 permalink: /enchantments/weapons/
 ---

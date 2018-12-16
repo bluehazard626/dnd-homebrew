@@ -1,5 +1,5 @@
 ---
+title: All Enchantments
 layout: enchantments
-type: all
 permalink: /enchantments/
 --- 
