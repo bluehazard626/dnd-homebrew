@@ -11,5 +11,27 @@ content:
     type: weapon
     applicable:
       - martial weapons
-    cost: 200g
+    cost: 200
     description: |
+      You think that might have been fooled into thinking your weapon is enchanted,
+      but you're unsure.
+
+      In order to not look like a fool in front of others when asked what your weapon
+      was enchanted with, you should probably exaggerate a quality of the weapon until
+      you figure this out on your own.
+  - name: helmet of edginess
+    type: armor
+    applicable:
+      - helmets
+    cost: 200
+    description: |
+      The wearer of the helmet is transformed into a pre-teen wearing all black clothes.
+
+      **Your intellect is reduced to a maximum of 8**. You are also convinced
+      that you have super powers, but you don't know which ones.
+
+      _Whenever asked a question, you must reply with:_
+      >"That's none of your business."
+
+      _Whenever given a command, you must reply with:_
+      >You're not my real dad.

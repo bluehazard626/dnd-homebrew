@@ -22,7 +22,13 @@ Enchantments:&nbsp;
 {% endif %}
 
 {% for item in filtered_enchantments %}
-  <h2>{{ item.name | capitalize }} - {{ item.type | capitalize }} enchantment</h1>
+  {% assign item_name_split = item.name | split: " " %}
+  <h2>
+    {% for part in item_name_split %}
+      {{ part | capitalize }}
+    {% endfor %}
+    - {{ item.type | capitalize }} enchantment
+  </h2>
   <p>
     <b>Cost:</b>&nbsp;
     {{ item.cost | capitalize }} gold
