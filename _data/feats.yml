@@ -1,4 +1,64 @@
 content:
+  - name: Aggressive Ki
+    prerequisite: >
+      Have at least one level in Monk
+    description: |
+      You focus your passioniote emotions into your movements to
+      deliver more ferocious strikes. When you have this feat, you
+      add half of your Strength modifier rounded up to the Ki Savinght
+      Throw DC. Additionally you add your Constitution Modifier in
+      bonus damage to any Ki abilities that inflict damage.
+
+  - name: All Together Now
+    prerequisite: >
+      Have at least 5 levels in Bard
+    description: |
+      Through music and a face of pure determination and trust, you
+      rally your party to fight as one. As an action, you can play an
+      enchanting tune on your instrument to provide a series of strikes
+      to your allies. All allies within 25 feet who are able to perceive
+      the melody gain a free unarmed melee attack. These granted attacks
+      only do 1d4+Strength Modifier damage. If an ally's attack is successful,
+      that ally gains another free unarmed melee attack on a different target
+      than the first one.
+
+  - name: Ambush Expert
+    prerequisite: >
+      Have at least three levels in Rogue, or have the Soldier Background
+    description: |
+      You excel at planning guerilla warfare and taking advantage of all that
+      is around you. As a standard action during a surprise round, you can
+      maneuver allies for positioning before they attack. This can only be
+      done so long as no ally within 40' of you is already engaged in combat
+      and allies participating can see you.
+      Using hand signals, you direct allies to move to locations within their
+      speed that you can see with a +4 bonus to Stealth Checks as they move.
+      After you are done directing everyone, every ally who partakes in the
+      surprise round has an increased critical hit range of 19-20
+      
+  - name: Arcanic Warding
+    prerequisite: >
+      Be proficient in Arcana and have the ability to cast spells
+    description: |
+      Through your knowledge gained from tinkering with your spells, you
+      have learned how to best defend against them. When you are targeted
+      by a spell attack that you also have the knowledge to cast, you
+      gain a +2 to AC against it or gain advantage on a saving throw if
+      it uses that instead.
+
+  - name: Attunement to Nature
+    prerequisite: >
+      Have the class ability -Wild Shape-
+    description: |
+      With greater ease you access the magical energy of the world to transform
+      more often. Per long rest, roll 1d4 and you gain the ability to calm your
+      mind enough to freely Wild Shape into a 1/8 CR or lower beast while out
+      of combat as many times as the 1d4 result per long rest without
+      expending one of your uses of Wild Shape. If you attack, cast a spell,
+      take the help action, take damage, or are the target of an attack, you
+      tense up and will transform back into your normal form at the end of
+      your next turn. All rules for Wild Shape must be followed as normal.
+
   - name: Blessed Heal
     prerequisite: >
       Have at least one level in Cleric
@@ -9,3 +69,418 @@ content:
       50, you heal the maximum amount for that die.
       If the result is less than 50, roll the die as normal.
       You must dinish a long rest before using Blessed Heal again.
+
+  - name: Delayed Reaction
+    prerequisite: >
+      None
+    description: |
+      You bide your time to better prep your actions with deadlier
+      precision while watching for danger. You take a -3 on initiative
+      rolls, but when you are the last of your allies in initiative
+      order, during your first turn if you take the attack action
+      you gain a +6 on all attack rolls, a +3 to damage per 3 character
+      levels, and a +1 to AC per 5 character levels until the end of
+      your second turn.
+      
+  - name: Devoted Prayer
+    prerequisite: >
+      Be proficient in Religion
+    description: |
+      When you pay respects to your deity, you go the extra mile.
+      Additonal offerings, an extra verse to the usual prayer, little
+      things that aren't necessary but are enough that your deity
+      appreciates your efforts. When you pray to your deity at the
+      start of your day for no less than 5 minutes, they want to see
+      you succeed more than usual. When you fail a skill checkm you
+      can make a DC 14 Religion Check to immediately reroll the Skill
+      Check. If you fail the Religion Check, your deity's favor begins
+      to fade and you may only attempt to reroll a Skill Check once more
+      until the next day when you renew your prayer. If you forget to
+      pray to your deity, they will refuse to grant this ability to
+      you for 1d4 days.
+      
+  - name: Distracting Dance
+    prerequisite: >
+      Be proficient in Performance
+    description: |
+      As a bonus action, you can make a Performance Check with a DC of
+      13+ the Targets Wisdom Modifier, create a small commotion to the
+      target within 30' to allow an ally engaged in combat with the target
+      to make a free Attack of Opportunity with advantage. The target of
+      the distraction must be able to see and hear you for this ability
+      to work. This action acts a ranged spell attack.
+      
+  - name: Eldritch Devotion
+    prerequisite: >
+      Have six levels in Warlock
+    description: |
+      Your powers reach further than ever before and you broaden your
+      horizen of abilities. Gain an additional Eldritch Invocation.
+      Prerequisites still limit selection options of Invocations    
+      
+  - name: Expanded Magic
+    prerequisite: >
+      Have at least one level in Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, or Wizard.
+    description: |
+      During your studies or meditations, you discover similarities and
+      patterns between spells. Upon taking this feat, you learn one new
+      spell of spell level equal to your proficiency bonus or lower. You
+      also know a nuymber of bonus spells equal to your proficiency bonus.    
+      
+  - name: Fortunate Find
+    prerequisite: >
+      Be proficient in Perception or Investigation
+    description: |
+      When performing an investigation or perception check on an indiviual
+      container, body, or item within 5 feet, you gain a +3 bonus to the
+      check. If this find yields gold pieces, gain an extra 1d20 per three
+      character levels. This can only be done once per hour.     
+      
+  - name: Gaia's Ambassador
+    prerequisite: >
+      Be proficient in Animal Handling
+    description: |
+      There's just something about you that intrigues animals. When you are
+      the target of a Beast type creature's attack, you can attempt an
+      Animal Handling check with a DC as listed from below. As a Reaction
+      to dissuade it from attacking you. When dissuaded, the creature will
+      no longer target you for its' current attack action or future attacks
+      unless you attack it. If you succeed on a second Animal Handling check
+      on the creature with a standard action within five minutes of the
+      first check with an increased DC of +6 of the previous check, you gain
+      the creature as an ally for the current combat, or if this is performed
+      out of combat it just leaves you in peace after five minutes. Attacking a
+      convinced creature ends this effect and cannot be performed again for
+      one day.   
+      
+      Tiny:       10
+      
+      Small:      14
+      
+      Medium:     17
+      
+      Large:      22
+      
+      Huge:       26
+      
+      Gargantuan: 31
+      
+  - name: Gleaning Strategist
+    prerequisite: >
+      Have at least five levels in Fighter
+    description: |
+      If you only make one attack this turn (Foregoing extra attacks), you
+      can gain knowledge on the creature you attack and perhaps even provide
+      aid to others in combat against those types of foes. Roll 1d4 to
+      determine the effect.
+      
+      1. Learn a targets HP and AC
+      
+      2. Learn a target's weaknesses and immunities
+      
+      3. Learn a targets standard attack bonus and damage
+      
+      4. All allies and self gain advantage on their next attack against
+      the target + pick one of the other options to learn
+      
+      Whatever the result, you gain a +2 to attack rolls against that creature
+      for the remainder of the encounter. These bonuses do not carry over to
+      additional creatures besides the one that was attacked even if they
+      are the same type of creature.
+      
+  - name: Grasshopper's Repose
+    prerequisite: >
+      Be proficient in Acrobatics
+    description: |
+      You are skilled with adding the attacks of your foes to your own
+      movements. As a reaction, whenever a foe fails an attack roll on you
+      with a melee attack within 5 feet and are of the same size or smaller,
+      you may attempt an Acrobatics Check of DC 16 to flip over your attacker
+      and land on the opposite side of them, gaining advantage on your next
+      attack against them. This can only be performed if there is at least 5
+      feet above the opponent and the other side of them is unoccupied. You
+      end your maneuver 5 feet in the air and land to the floor. This movement
+      does not trigger Attacks of Opportunity. If you fail the check, they
+      get to make an Attack of Opportunity against you with advantage and
+      you do not get to move from your square.   
+      
+  - name: Higher Ground
+    prerequisite: >
+      Have at least one level in Ranger
+    description: |
+      With the presence of a bird of prey, you hunt from up high. You gain a
+      +2 to ranged attack rolls and damage rolls for when you have at least
+      10 feet of height advantage over a foe. These bonuses increase to +3 at
+      10th level.
+      
+   - name: Historian
+    prerequisite: >
+      Be proficient in History or Nature
+    description: |
+      When you take this feat, choose a monster type to be familiar with.
+      Whenever you can see a creature of this type, you can use your bonus
+      action to  make either a History or Nature Check against it to determine
+      more information about it as outlined in the table below. This can only
+      be attempted once per encounter.
+      
+      (Rolling higher yields the previous information as well)
+      
+      1-10: You draw a blank and are unable to recall anything about it.
+      
+      11-13: You know what it is called 
+      
+      14-16: You know its health
+      
+      17-19: You know its AC
+      
+      20+: You know its primary method of attack and how much damage it causes or its weaknesses (choose). 
+   
+  - name: Improved Second Wind
+    prerequisite: >
+      Have at least one level in Fighter
+    description: |
+      You dig deeper within yourself to find resolve and reason to keep
+      fighting. When you use the Second Wind Class Feature, you gain an
+      additional 1d8 hit points (at 10th level you gain 2d6, at 15th
+      level you gain 3d8).
+
+  - name: Life Charge
+    prerequisite: >
+      Have at least one level in Sorcerer
+    description: |
+      Using your magic as you slay foes, you use their fleeting lives to
+      refuel your arcane powers. Once per encounter, when you kill a
+      creature with a spell, you may roll a d6 and on a 6 you regain 2
+      sorcery point. You cannot hold more than your levels permitted number
+      of sorcery points and you cannot attempt this roll if you do not
+      have any remaining sorcery points.
+
+  - name: Metalworking
+    prerequisite: >
+      None
+    description: |
+      In your free time you tend to your gear to keep them in top performance.
+      During a Short Rest, you can use Smith's Tools to enhance a piercing or
+      slashing weapon. Once sharpened, the weapon will do and additional
+      1d4+1 damage for 1d4 hits. If you are proficient in Smith's Tools,
+      this increases to 2d4 hits.
+
+  - name: Natural Healing
+    prerequisite: >
+      Be proficient in either Medicine, Nature, or Survival
+    description: |
+      Through your knowledge of home remedies, you can attempt to forage your
+      area for natural healing plants, roots, or fruit. Choose a Terrain type
+      to be familiar with of either Arctic, Coast, Desert, Forest, Grassland,
+      Mountains, Swamp, or Underdark. If you have Natural Explorer and are
+      already specialized for one of the listed terrains, you may choose another
+      from this list for this feat only. You must succeed on a medicine or
+      survival check and then succeed on a nature check (DC’s set by the DM to
+      successfully find nature items you can concoct into a healing remedy that
+      heals for 2d4 during a short rest and can be applied to self or friendlies.
+      If you have a Herbalism Kit or Alchemist Supplies this is increased to 2d8.
+      If you are proficient with a Herbalism Kit or Alchemist Supplies you heal
+      for 3d8 instead.
+
+  - name: Offensive Sorcery
+    prerequisite: >
+      Have at least 7 levels in sorcerer
+    description: |
+      You unblock all mental barriers you have in place to attempt a full force
+      attack, best hope it doesn't fizzle out and drain you instead. You may
+      expend 7 sorcery points to cause a spell to have a 50% chance to inflict
+      maximum damage +10 magical damage. On a fail, you roll as normal.
+
+  - name: One vs. One
+    prerequisite: >
+      Have at least one level in Barbarian
+    description: |
+      Fully focused and unimpeded by distractions, a barbarian can unleash their
+      full combat instinct against a single foe. So long as no other enemy is
+      within 5’ of you or your target, you gain a +1 to attack rolls, +1 to
+      damage rolls, and a +1 to AC against the first attack from your target.
+      Every 3 levels past 1st, the +1 to damage rolls increases by +1.
+
+  - name: One vs. One
+    prerequisite: >
+      Have at least one level in Barbarian
+    description: |
+      Fully focused and unimpeded by distractions, a barbarian can unleash their
+      full combat instinct against a single foe. So long as no other enemy is
+      within 5’ of you or your target, you gain a +1 to attack rolls, +1 to
+      damage rolls, and a +1 to AC against the first attack from your target.
+      Every 3 levels past 1st, the +1 to damage rolls increases by +1.
+
+  - name: One with the Wild
+    prerequisite: >
+      Have at least one level in Druid and a Wisdom Score of at least 16
+    description: |
+      When you use your Wild Shape Class Ability to transform into a creature of
+      at least CR 1/2, you can add two of your hit die per three Druid levels to
+      its' maximum hit points. This can only be done once per long rest.
+      
+  - name: Palace of the Mind
+    prerequisite: >
+      Have at least five levels in Monk
+    description: |
+      Through focus and calmness, you join with the arcane forces of the world to
+      protect yourself. When you are the target of a non-elemental damage based
+      spell, you can add your Inteligence Modifier to your AC. Additionally, you
+      now have a 50% chance to break the Blindness, Deafened, Paralysis, or
+      Stunned condition on yourself at the beginning of your turn. This only
+      occurs once per affliction per encounter.    
+      
+  - name: Panic dodge
+    prerequisite: >
+      None
+    description: |
+      Ignoring all planning and strategy, you obey your instincts for self
+      preservation. Once per encounter, when a melee weapon attack would hit you,
+      you can choose to instead drop everything in your hands and fall prone 5 feet
+      away from the attacker, forcing them to redo their original attack against
+      you with disadvantage. You do not grant advantage as normal for the Prone
+      condition for this rerolled attack only.    
+
+  - name: Past Experience
+    prerequisite: >
+      None
+    description: |
+      From you training and upbringing, you are more worldly than others in your
+      position. Choose a skill to become proficient in and gain a +2 Misc. bonus to
+      it. You gain a 2nd skill to be proficient in and gain the +2 bonus to it at
+      8th level, and a 3rd at 15th.
+
+  - name: Planned Arcanum
+    prerequisite: >
+      Have at least one level in Cleric, Druid, Paladin, or Wizard
+    description: |
+      Through greater memorization and preperations you take, you can perform a wider
+      variety of magic. You are able to prepare an additional number of spells equal
+      to your Proficiency Bonus.
+
+  - name: Reckless Brutality
+    prerequisite: >
+      Have at least two levels in Barbarian
+    description: |
+      At the cost of your well being, you commit even more into your brutal attacks to
+      seek out weak points while exposing yours. When you take this feat, your
+      Reckless Attack changes to also allow you to increase your critical hit range to
+      18-20 (This does not stack with other magical effects that increase your
+      critical hit range) and gain an additional 1d4 weapon damage (2d4 at level 5,
+      3d4 at level 9, and 4d4 at level 13).
+      
+      It also grants you 1d10 temp hp but imposes
+      a -2 to AC until the start of your next turn. This all is in addition to the
+      normal effects of Reckless Attack.
+
+  - name: Reclaiming Invocation
+    prerequisite: >
+      Have at least one level in Warlock
+    description: |
+      You gain the ability to potentially regain one of your spell slots without a rest.
+      You can use a standard action to roll a d6 and on a 6 you regain 1 spell slot
+      whose level is equal to your Proficiency Bonus -1 at a minimum of 1. Once you use
+      this feature, you must finish a long rest before you can use it again.
+
+  - name: Reflexive Guard
+    prerequisite: >
+      None
+    description: |
+      In the midst of fighting, you have a heightened awareness of your surroundings.
+      This can only activate when you are adjacent to two or more creatures engaged in
+      combat with you. When you are targeted by two attacks in the same round, you can
+      use your reaction to increase your AC by 3 for the second attack. This increase to
+      AC goes away after that next attack whether it hits or not.
+
+  - name: Reserved Power
+    prerequisite: >
+      Have at least one level in Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, or Wizard
+    description: |
+      When you are left to your own devices you focus on storing arcana within yourself
+      for later use. You gain an extra spell slot whose level is less than or equal to
+      your spellcasting ability modifier. You cannot take a spell slot level highter
+      than the level spells you can cast without this feat.
+
+  - name: Returning the Love
+    prerequisite: >
+      Have at least five levels in Bard
+    description: |
+      Seeing your praise and encouragement lift up your allies fills you with vigor and
+      resolve to succeed for them. Anytime an ally succeeds on an ability check, attack
+      roll, or saving throw it makes using your Bardic Inspiration in their roll, you
+      gain your own Bardic Inspiration die that lasts for five minutes. You can only have
+      one Bardic Inspiration die from this feat at any time.
+
+  - name: Rolling fall
+    prerequisite: >
+      Be proficient in either Athletics or Acrobatics
+    description: |
+      Tumbling is a skill that takes practice and precision; both of which you have
+      mastered. When you fall from a height that would normally cause you fall damage,
+      you can attempt an Acrobatics or Athletics Check with a DC of 10 +2 per 10 feet of
+      falling to avoid 2d8 worth of the falling damage.
+
+  - name: Shield Save
+    prerequisite: >
+      Be proficient in Shields
+    description: |
+      You are skilled with the shield to such a degree that you can throw one with intense
+      speed and accuracy. You can use your reaction to make an attack roll using Dexterity
+      against the ranged attack with a DC of 7 + the Attacker's bonus to Attack Rolls, to
+      be able to throw your shield and take the hit of the attack. This can only be done
+      before damage is calculated. You must be able to see both the attacker and target of
+      the attack, and have no creature of equal size to you or larger inbetween your path
+      to throw your shield. The shield lands 5 feet in front of the intended target of the
+      attack in the direction the attack was cast from. However, you have a 15% chance for
+      the shield to recoil and return to you after it takes the hit. If the ranged attack
+      would cause damage to an area, this feat cannot be used to block it.
+
+  - name: Smiting Right
+    prerequisite: >
+      Have at least one level in Paladin
+    description: |
+      Your connection to your deity and your bonds to the world are second to none. Once
+      per long rest, you gain one free use of a 1st level Smite Spell without it costing
+      a spell slot. At level 8 this increases to a 2nd level Smite Spell. Your Divine Health
+      class ability now includes a resistance to Poison Damage and advantage on Saving Throws
+      against Poison. 
+
+  - name: Swift Dagger
+    prerequisite: >
+      Have at least three levels in Rogue and a Dexterity Score of 18
+    description: |
+      You know the weight, the balance, the physics of your daggers to a deadly degree. When
+      you make an attack with a dagger, you increase its' base damage to 2d4 and your
+      Critical Hit range increases to 19-20 while using one.
+
+  - name: Wand Slinger
+    prerequisite: >
+      Have at least one level in Wizard
+    description: |
+      Wielding 2 wands in hand, you barrage your foes with more, though weaker attacks. If you
+      are wielding two wands, one in each hand, you may cast 2 cantrips that require you to
+      make a spell attack roll using one attack action. One cantrip however will only do half
+      damage rounded up (If one cantrip inflicts more damage than the other then that is the
+      one that is halved). You must be wielding 2 wands in separate hands to benefit from this.
+      If you use one wand to cast a spell of higher level than 0, even if it is a cantrip, the
+      other wand cannot cast a spell.
+
+  - name: Wanderer's Adaptation
+    prerequisite: >
+      Have at least 5 levels in Druid and have Circle of the Land
+    description: |
+      Searching the mysteries of the wild has brought you to many lands outside of your home,
+      while there you learned their secrets. You gain access to 2 spells from another spell
+      list as described by options in Circle of the Land different from your chosen land.
+      
+  - name: Worldly Step
+    prerequisite: >
+      None
+    description: |
+      Travel and exploration has granted you a comfortable air of familiarity with those lands
+      that remain with you always. Pick 3 terrains from Arctic, Coast, Desert, Forest,
+      Grassland, Mountains, Swamp, or Underdark to be familiar with. You no longer suffer
+      difficult terrain while in those terrains except for magical effects and you gain 5
+      feet of movement speed while in them. additionally you have advantage on Attack Rolls
+      and Skill Checks when you would normally be suffering from Difficult Terrain in those
+      areas.     
